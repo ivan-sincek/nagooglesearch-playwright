@@ -178,8 +178,8 @@ class GoogleClient:
 		"""
 		Get default HTTP cookies.\n
 		This is a newer cookie consent mechanism.\n
-		The below 'SOCS' and '__Secure-ENID' cookies reject all tracking and are valid for 13 months, created on 2026-03-20, but likely no longer work.
-		More at: https://policies.google.com/technologies/cookies/embedded?hl=en-US
+		The below 'SOCS' and '__Secure-ENID' cookies reject all tracking and are valid for 13 months, created on 2026-03-20, but likely no longer work.\n
+		More at: https://policies.google.com/technologies/cookies/embedded?hl=en-US\n
 		Playwright handles this automatically - no default HTTP cookies are needed.
 		"""
 		return self.__get_cookies({
@@ -189,7 +189,7 @@ class GoogleClient:
 
 	def __get_cookies(self, cookies: dict[str, str]) -> list[dict[str, str]]:
 		"""
-		Get HTTP cookies.\n
+		Get HTTP cookies.
 		"""
 		tmp = []
 		if cookies:
